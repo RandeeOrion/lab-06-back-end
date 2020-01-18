@@ -1,0 +1,20 @@
+{
+  "name": "lab-06-back-end",
+  "version": "1.0.0",
+  "description": "Number and name of feature: __File Set up____",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RandeeOrion/lab-06-back-end.git"
+  },
+  "author": "Eyob and Randee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RandeeOrion/lab-06-back-end/issues"
+  },
+  "homepage": "https://github.com/RandeeOrion/lab-06-back-end#readme"
+}
