@@ -56,6 +56,18 @@ Actual time needed to complete: _1 hour 25 min_
 
 
 
+Number and name of feature: __3: Weather____
+
+Estimate of time needed to complete: ___1 hour_
+
+Start time: _3:30_
+
+Finish time: _4:30_
+
+Actual time needed to complete: _1.5hr_
+
+
+
 
 
 

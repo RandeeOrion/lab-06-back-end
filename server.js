@@ -14,7 +14,7 @@ app.use(cors());
 //   response.send('Home Page!');
 // })
 
-
+let weatherArray = [];
 
 app.get('/location', (request, response) => {
   try {
@@ -28,6 +28,27 @@ app.get('/location', (request, response) => {
     errorHandler('so sorry, something went wrong.', request, response);
   }
 });
+
+//getting the weather 
+app.get('/weather', (request, response) => {
+  try {
+    const weatherData = require('./data/darksky.json');
+    // const weatherBuilder = new WeatherConstructor(daily, weatherData);
+    weatherData.daily.data.forEach(obj =>{
+      weatherArray.push(new WeatherConstructor (obj.time, obj.summary));
+    })
+    response.send(weatherArray);
+    console.log(weatherArray);
+  }
+  catch(error){
+    errorHandler('so sorry, something went wrong.', request, response);
+  }
+})
+
+function WeatherConstructor(time, forecast){
+  this.time = time;
+  this.forecast = forecast;
+}
 
 
 function Location(city, geoData){
